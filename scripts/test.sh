@@ -12,7 +12,13 @@ cleanup() {
 
 trap cleanup EXIT
 
-sleep 1
+# Wait until the server is ready
+for i in {1..20}; do
+  if curl -s -f "http://localhost:$PORT/healthz" > /dev/null; then
+    break
+  fi
+  sleep 0.5
+done
 
 curl -s -f "http://localhost:$PORT/" > /dev/null
 curl -s -f "http://localhost:$PORT/healthz" > /dev/null
