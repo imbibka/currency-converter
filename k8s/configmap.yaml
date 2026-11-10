@@ -1,0 +1,8 @@
+# M4 starter: your settings, outside the image. Values are always text: keep the quotes.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: currency-converter-config
+data:
+  PORT: "8080"
+  EXCHANGE_RATE: "500.0"
