@@ -1,0 +1,12 @@
+# M4 starter: one stable name in front of your Pods.
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-converter
+spec:
+  selector:
+    app: currency-converter
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
