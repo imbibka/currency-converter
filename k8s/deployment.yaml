@@ -20,7 +20,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: app
-          image: ghcr.io/imbibka/currency-converter:f1de53e4c8a4abcf3b9aadea0de2cb06c86d6e91
+          image: ghcr.io/imbibka/currency-converter:1fab03dcc0cc61ca860311e91b793266334fd72b
           ports:
             - name: http
               containerPort: 8080
