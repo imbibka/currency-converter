@@ -2,3 +2,11 @@
 .idea/
 __pycache__/
 *.pyc
+
+# Terraform: ignore state and cache
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+*.tfplan
+crash.log
