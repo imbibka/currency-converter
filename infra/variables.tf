@@ -1,6 +1,6 @@
 variable "image" {
   # BLANK 3 - one plain sentence: what is this value? (M6 checks every variable has one)
-  description = "____"
+  description = "Docker image for my Currency Converter API"
   type        = string
   # BLANK 4 - your M3 image, tagged with a FULL commit SHA that is in your package.
   # Lowercase owner and repository. Never :latest.
